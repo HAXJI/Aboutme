@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+
+        .circle {
+            width: 360px;
+            height: 500px;
+            background-color: #b8b8b8;
+            border-radius: 70%;
+            background-image: url('img/fuji.jpg');
+            background-position: center;
+            background-size: cover; 
+            position: absolute;
+            margin-left: 260px;
+            margin-top: 70px;
+            margin-right:10px;
+            border: 10px solid #c07547d3;
+            
+        }
+        .circle-container {
+            display: flex; /* ใช้ Flexbox เพื่อจัดตำแหน่งวงกลมข้างกัน */
+            justify-content: center; /* จัดกลางวงกลมในแนวนอน */
+            gap: 30px; /* ระยะห่างระหว่างวงกลม */
+            margin:31%; /* จัดข้อความในแนวตั้งให้อยู่กลาง */
+            margin-left: 47%; /* จัดข้อความในแนวนอนให้อยู่กลาง */
+            margin-bottom: 120px
+            
+        }
+        .circle1 { background-color: #e74c3c;   
+        
+            width: 140px; /* ขนาดของวงกลม */
+            height: 140px; /* ขนาดของวงกลม */
+            border-radius: 50%; /* ทำให้เป็นวงกลม */
+            display: flex; /* ใช้ Flexbox ภายในวงกลม */
+            align-items: center; /* จัดตำแหน่งแนวตั้งให้กึ่งกลาง */
+            justify-content: center; /* จัดตำแหน่งแนวนอนให้กึ่งกลาง */
+            color: #000000; /* สีข้อความ */
+            font-size: 18px; /* ขนาดฟอนต์ของข้อความ */
+            font-weight: bold; /* ทำให้ข้อความหนา */
+            text-decoration: none; /* ลบขีดเส้นใต้จากข้อความ */ }
+        .circle2 { background-color: #3498db;         
+          width: 140px; /* ขนาดของวงกลม */
+            height: 140px; /* ขนาดของวงกลม */
+            border-radius: 50%; /* ทำให้เป็นวงกลม */
+            display: flex; /* ใช้ Flexbox ภายในวงกลม */
+            align-items: center; /* จัดตำแหน่งแนวตั้งให้กึ่งกลาง */
+            justify-content: center; /* จัดตำแหน่งแนวนอนให้กึ่งกลาง */
+            color: #000000; /* สีข้อความ */
+            font-size: 18px; /* ขนาดฟอนต์ของข้อความ */
+            font-weight: bold; /* ทำให้ข้อความหนา */
+            text-decoration: none; /* ลบขีดเส้นใต้จากข้อความ */ } 
+        .circle3 { background-color: #2ecc71;        
+          width: 140px; /* ขนาดของวงกลม */
+            height: 140px; /* ขนาดของวงกลม */
+            border-radius: 50%; /* ทำให้เป็นวงกลม */
+            display: flex; /* ใช้ Flexbox ภายในวงกลม */
+            align-items: center; /* จัดตำแหน่งแนวตั้งให้กึ่งกลาง */
+            justify-content: center; /* จัดตำแหน่งแนวนอนให้กึ่งกลาง */
+            color: #000000; /* สีข้อความ */
+            font-size: 18px; /* ขนาดฟอนต์ของข้อความ */
+            font-weight: bold; /* ทำให้ข้อความหนา */
+            text-decoration: none; /* ลบขีดเส้นใต้จากข้อความ */ } 
+        body {
+            background-color: #fffcf3; /* สีพื้นหลังของหน้าเว็บ */
+            font-family:"Itim",cursive ;
+            
+            
+        }
+        .center {
+            text-align: center; /* จัดข้อความกึ่งกลาง */
+        }
+        .text{
+          position: absolute;
+          font-weight: 600;
+            top: 25%; /* จัดข้อความในแนวตั้งให้อยู่กลาง */
+            left: 47%; /* จัดข้อความในแนวนอนให้อยู่กลาง */
+            color: #251a05;
+            font-size: 60px;
+        }
+        .text1{
+          position: absolute;
+            top: 35%; /* จัดข้อความในแนวตั้งให้อยู่กลาง */
+            left: 47%; /* จัดข้อความในแนวนอนให้อยู่กลาง */
+            color: #251a05;
+            font-size: 35px;
+        }
+        .text2{
+          position: absolute;
+            top:40%; /* จัดข้อความในแนวตั้งให้อยู่กลาง */
+            left: 47%; /* จัดข้อความในแนวนอนให้อยู่กลาง */
+            color: #251a05;
+            font-size: 35px;
+        }
+        .text3{
+          position: absolute;
+            top: 45%; /* จัดข้อความในแนวตั้งให้อยู่กลาง */
+            left: 47%; /* จัดข้อความในแนวนอนให้อยู่กลาง */
+            color: #251a05;
+            font-size: 35px;
+        }
+        .text4{
+          position: absolute;
+            top: 50%; /* จัดข้อความในแนวตั้งให้อยู่กลาง */
+            left: 47%; /* จัดข้อความในแนวนอนให้อยู่กลาง */
+            color: #251a05;
+            font-size: 35px;
+        }
+        .text5{
+          position: absolute;
+            top: 55%; /* จัดข้อความในแนวตั้งให้อยู่กลาง */
+            left: 47%; /* จัดข้อความในแนวนอนให้อยู่กลาง */
+            color: #251a05;
+            font-size: 35px;
+        }
+        li{
+            text-decoration-color: burlywood;
+            font-size: 20px;
+        }
+        .circle1:hover {
+    background-color: #000000; /* เปลี่ยนเป็นสีที่เข้มขึ้น */
+    color: #ffffff; /* เปลี่ยนสีข้อความเป็นสีขาว */
+    transform: scale(1.1); /* ขยายขนาดเล็กน้อย */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* เพิ่มเงา */
+    transition: all 0.3s ease; /* เพิ่มการเปลี่ยนแปลงแบบเรียบ */
+}
+
+.circle2:hover {
+    background-color: #000000; /* เปลี่ยนเป็นสีที่เข้มขึ้น */
+    color: #ffffff; /* เปลี่ยนสีข้อความเป็นสีขาว */
+    transform: scale(1.1); /* ขยายขนาดเล็กน้อย */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* เพิ่มเงา */
+    transition: all 0.3s ease; /* เพิ่มการเปลี่ยนแปลงแบบเรียบ */
+}
+
+.circle3:hover {
+    background-color: #000000; /* เปลี่ยนเป็นสีที่เข้มขึ้น */
+    color: #ffffff; /* เปลี่ยนสีข้อความเป็นสีขาว */
+    transform: scale(1.1); /* ขยายขนาดเล็กน้อย */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* เพิ่มเงา */
+    transition: all 0.3s ease; /* เพิ่มการเปลี่ยนแปลงแบบเรียบ */
+}
+.nav-item:hover{
+            transform: scale(1.2); /* ขยายขนาดเล็กน้อย */
+            transition: all 0.3s ease; /* เพิ่มการเปลี่ยนแปลงแบบเรียบ */
+            color: #fcfcfc; /* เปลี่ยนสีข้อความ */
+          }
+
+          footer {
+            background-color: rgb(250, 241, 236);
+            color: rgb(17, 3, 3);
+            padding: 5px 0;
+            text-align: center;
+            border: #000000;
+            background-color: #fffcf3; /* สีพื้นหลังของหน้าเว็บ */
+        }
+
+        .footer-social {
+            margin-top: 20px;
+        }
+
+        .footer-social a {
+            margin: 0 10px;
+            color: #3c2121;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-social a:hover {
+            color: #f45353;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #361818;
+        }
+    </style>
+</head>
+<body>
+    <!--ส่วนของหัว-->
+    <header class="p-3 text-bg-none" >
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-1 mb-2 border-bottom">
+              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                <span class="fs-4 link text-dark">ABOUT ME....</span>
+              </a>
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="education.html" class="nav-link text-dark btn btn-outline-light me-2">Education</a></li>
+                <li class="nav-item"><a href="certi.html" class="nav-link text-dark btn btn-outline-light me-2">Certificates</a></li>
+                <li class="nav-item"><a href="activ.html" class="nav-link text-dark btn btn-outline-light me-2">Activities</a></li>
+              </ul>
+            </header>
+          </div>
+      </header>
+    
+    </div>
+      <!--วงกลมรูป-->
+      <div class="circle"></div>
+      <!--ข้อความ-->
+      <p class="text">Hello </p>
+      <p class="text1">I'm Wipawanee Thongmon </p>
+      <p class="text2">My Nickname Fuji</p>
+      <p class="text3">I’m 19 years old..</p>
+      <p class="text4"> I study Business Computer</p>
+      <p class="text5"> at Saraburi Technical College</p>
+     
+     <!--วงกลมสามอัน--> 
+      <div class="circle-container">
+        <a href="education.html" class="circle1">Education</a>
+        <a href="certi.html" class="circle2">Certificates</a>
+        <a href="activ.html" class="circle3">Activities</a>
+      </div>
+    <!--ส่วนของท้ายเว็บ-->
+    <footer class=" flex-wrap justify-content-center py-1 mb-2 border-top">
+      <div class="footer-social">
+          <a href="https://www.facebook.com/share/VxD5UY1NTZi4cQGS/?mibextid=qi2Omg">Facebook</a>
+          <a href="https://www.instagram.com/callme_fxji?igsh=MTgyM2F3bjZxdGo3OA==">Instagram</a>
+      </div>
+
+      <div class="footer-bottom">
+        © จัดทำโดย นางสาววิภวานี ทองมนต์ สคธ 1/1 เลขที่ 17 วิทยาลัยเทคนิคสระบุรี
+        <br>Website นี้จัดทำขึ้นเพื่อการศึกษาในรายวิชาโปรแกรมกราฟิกสำหรับการออกแบบเว็บไซต์
+      </div>
+  </footer>
+  </body>
+</html>

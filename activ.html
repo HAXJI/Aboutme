@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กิจกรรม</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Itim", cursive;
+            background-color: rgb(250, 241, 236);
+        }
+        .nav-item:hover {
+            transform: scale(1.2);
+            transition: all 0.3s ease;
+            color: #fcfcfc;
+        }
+        .text1:hover{
+            transform: scale(1.2); /* ขยายขนาดเล็กน้อย */
+            transition: all 0.3s ease; /* เพิ่มการเปลี่ยนแปลงแบบเรียบ */
+            border-radius: 90px;
+          }
+        .slide {
+            margin-top: 100px;
+            border-radius: 200px;
+            width: 1400px;
+            height: 150px;
+            margin-left: 60px;
+        }
+        .sports, .cm {
+            margin-top: 90px;
+            margin-left: 10px;
+            text-align: center;
+            color: #e62c6a;
+            font-size: 36px;
+        }
+        .centered-heading {
+            text-align: center; /* จัดกลางข้อความในแนวนอน */
+        }
+
+        .centered-heading h1 {
+            color: #251a05;
+            font-size: 60px;
+            
+        }
+
+        .centered-heading h1:hover {
+          transform: scale(1.2); /* ขยายขนาดเล็กน้อย */
+          transition: all 0.3s ease; /* เพิ่มการเปลี่ยนแปลงแบบเรียบ */
+        }
+        footer {
+            background-color: rgb(250, 241, 236);
+            color: rgb(17, 3, 3);
+            padding: 5px 0;
+            text-align: center;
+            border: #000000;
+            margin-top: 10ex;
+        }
+
+        .footer-social {
+            margin-top: 20px;
+        }
+
+        .footer-social a {
+            margin: 0 10px;
+            color: #3c2121;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-social a:hover {
+            color: #f45353;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #361818;
+        }
+    </style>
+</head>
+<body>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Header -->
+    <header class="p-3 text-bg-none">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center py-1 mb-2 border-bottom">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                    <span class="fs-4 link text-dark">ABOUT ME....</span>
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="education.html" class="nav-link text-dark btn btn-outline-light me-2">Education</a></li>
+                    <li class="nav-item"><a href="certi.html" class="nav-link text-dark btn btn-outline-light me-2">Certificates</a></li>
+                    <li class="nav-item"><a href="activ.html" class="nav-link text-dark btn btn-outline-light me-2">Activities</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link text-dark btn btn-outline-light me-2">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- <p class="text1">Activities</p> -->
+      <div class="row">
+          <div class="col-12 centered-heading">
+              <h1>Activities</h1>
+          </div>
+      </div>
+        
+        <!-- SBT sports day -->
+        <h1 class="sports">SBT sports day</h1>
+        <div data-aos="zoom-in">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/sp1.jpg" alt="กิจกรรมกีฬาวัน SBT 1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/sp2.jpg" alt="กิจกรรมกีฬาวัน SBT 2">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/sp3.jpg" alt="กิจกรรมกีฬาวัน SBT 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-2">
+            <div class="col d-flex flex-column align-items-start gap-2">
+                <h2 class="text-body-emphasis">SBT sports day</h2>
+                <h5 class="text-body-secondary">
+                    เมื่อเด็กเทคนิคมาแข่งกีฬา .. ภาพกีฬามันส์ๆ😆🔥❤️
+                    <br>🏆🥇!!ตะแบกเกมส์2023!!🔥⚽️
+                    <br> กีฬาสีภายใน วิทยาลัยเทคนิคสระบุรี ประจำปีการศึกษา 2567🤾‍♂️
+                    <br> วันที่ 27 กุมภาพันธ์ 2567 ณ วิทยาลัยเทคนิคสระบุรี
+                </h5>
+            </div>
+        </div>
+
+        <!-- Additional Images for SBT sports day -->
+        <div data-aos="zoom-in">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/sp4.jpg" alt="กิจกรรมกีฬาวัน SBT 4">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/sp5.jpg" alt="กิจกรรมกีฬาวัน SBT 5">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/sp6.jpg" alt="กิจกรรมกีฬาวัน SBT 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-aos="zoom-in">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/sp7.jpg" alt="กิจกรรมกีฬาวัน SBT 1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/sp8.jpg" alt="กิจกรรมกีฬาวัน SBT 2">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/sp9.jpg" alt="กิจกรรมกีฬาวัน SBT 3">
+                    </div>
+                </div>
+            </div>
+            </div>
+        <!-- SBT Christmas -->
+        <h1 class="cm">SBT Christmas</h1>
+        <div data-aos="zoom-in">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/cm1.jpg" alt="คริสต์มาส SBT 1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/cm4.jpg" alt="คริสต์มาส SBT 2">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/cm3.jpg" alt="คริสต์มาส SBT 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-2">
+            <div class="col d-flex flex-column align-items-start gap-2">
+                <h2 class="text-body-emphasis">SBT The Star of Christmas 2023</h2>
+                <h5 class="text-body-secondary">
+                    SBT The Star of Christmas 2023✨ 🎄         
+                    <br>📍วันพุธที่ 27 ธันวาคม 2566 
+                    <br> ณ วิทยาลัยเทคนิคสระบุรี
+                </h5>
+            </div>
+        </div>
+
+        <!-- Additional Images for SBT Christmas -->
+        <div data-aos="zoom-in">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/cm5.png" alt="คริสต์มาส SBT 4">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/cm6.png" alt="คริสต์มาส SBT 5">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/cm7.png" alt="คริสต์มาส SBT 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-aos="zoom-in">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/cm8.jpg" alt="คริสต์มาส SBT 4">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/cm9.jpg" alt="คริสต์มาส SBT 5">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <img src="img/cm10.jpg" alt="คริสต์มาส SBT 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class=" flex-wrap justify-content-center py-1 mb-2 border-top">
+        <div class="footer-social">
+            <a href="https://www.facebook.com/share/VxD5UY1NTZi4cQGS/?mibextid=qi2Omg">Facebook</a>
+            <a href="https://www.instagram.com/callme_fxji?igsh=MTgyM2F3bjZxdGo3OA==">Instagram</a>
+        </div>
+  
+        <div class="footer-bottom">
+          © จัดทำโดย นางสาววิภวานี ทองมนต์ สคธ 1/1 เลขที่ 17 วิทยาลัยเทคนิคสระบุรี
+          <br>Website นี้จัดทำขึ้นเพื่อการศึกษาในรายวิชาโปรแกรมกราฟิกสำหรับการออกแบบเว็บไซต์
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
